@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Ramadhan & Perang Badar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+            font-size: 2em;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+        .menu div {
+            width: 300px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #00ffff;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .menu div:hover {
+            transform: scale(1.1);
+            background: rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            background: rgba(0, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    Kisah Inspiratif Ramadhan & Perang Badar
+</header>
+<div class="menu">
+    <div onclick="toggleContent('kisah')">Kisah Perjuangan Nabi Muhammad SAW</div>
+    <div onclick="toggleContent('badar')">Perang Badar</div>
+    <div onclick="toggleContent('quotes')">Quotes Ramadhan</div>
+</div>
+<div class="content" id="kisah">
+    <h2>Kisah Perjuangan Nabi Muhammad SAW</h2>
+    <p>Nabi Muhammad SAW berjuang menyebarkan agama Islam dengan penuh kesabaran dan pengorbanan. Kisah ini menjadi inspirasi bagi umat Islam untuk meneladani perjuangan beliau.</p>
+</div>
+<div class="content" id="badar">
+    <h2>Perang Badar</h2>
+    <p>Perang Badar adalah perang pertama dalam Islam yang terjadi pada 17 Ramadhan tahun kedua Hijriah, di mana kaum Muslimin memenangkan pertempuran meskipun jumlah mereka jauh lebih sedikit.</p>
+</div>
+<div class="content" id="quotes">
+    <h2>Quotes Ramadhan</h2>
+    <div class="quote">"Barangsiapa berpuasa di bulan Ramadhan dengan penuh iman dan mengharap pahala, maka diampuni dosa-dosanya yang telah lalu." (HR. Bukhari & Muslim)</div>
+</div>
+</body>
+</html>
